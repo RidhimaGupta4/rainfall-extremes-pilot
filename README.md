@@ -9,6 +9,14 @@ It uses 64 winters (1961–2025) of HadUK-Grid daily rainfall on a 16 × 16 grid
 the Lake District, and holds out Storm Desmond (5 December 2015), the wettest day in the record,
 as a stress test.
 
+**Why this matters for flood risk.** River flooding responds to rainfall accumulated over whole
+catchments, and flood planning relies on estimates of rare events, such as the 1-in-100-year
+storm, that lie beyond most observed records. A generator used for flood risk assessment must
+therefore get two things right: extremes averaged over areas, not only at single points, and
+probabilities of events more severe than any it has seen. Storm Desmond, which caused severe
+flooding in Cumbria in December 2015, is held out here to test the second. This pilot studies the
+rainfall side only; it does not model river flow or flooding.
+
 ![Storm Desmond and Desmond-sized days from four generators](figures/desmond_vs_generated.png)
 
 **Main findings**
