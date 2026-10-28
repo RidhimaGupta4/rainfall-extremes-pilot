@@ -202,6 +202,9 @@ periods pool 3 seeds; single seeds give 129–477 (cell) and 114–457 (box) win
   convection-permitting simulations. One region, winters only.
 * **No duration or movement.** Days are generated independently, so persistence, storm movement
   and multi-day totals (Desmond's three-day total) are not modelled.
+* **Rainfall only.** No hydrological model converts the generated rainfall into river flow or
+  flood extent, so the results bear on the rainfall inputs to flood risk assessment, not on
+  flood risk itself.
 * **Stationarity assumed.** Mean winter rainfall rose over 1961–2025 (Kendall's τ = 0.28,
   p = 0.001, treating winters as independent). The interleaved split spreads that trend across all
   sets rather than removing it, and climate conditioning is not attempted.
@@ -286,6 +289,9 @@ Each extension follows from a result above and maps to a research question.
   would move from describing the past climate to projecting future extremes.
 * **Move to convection-permitting data** (RQ1). Repeat the comparison on hourly 2.2 km simulations,
   where short, intense convective rainfall matters more than in daily winter totals.
+* **Link to flood impacts.** Pass generated rainfall through a hydrological model for a
+  Cumbrian catchment (for example the Eden, which flooded during Storm Desmond) to see how the
+  differences between generators carry through to peak river flows.
 
 ---
 
