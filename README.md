@@ -257,7 +257,7 @@ periods pool 3 seeds; single seeds give 129–477 (cell) and 114–457 (box) win
 
 ## Next steps
 
-Each extension follows from a result above and maps to a research question of the E5 project.
+Each extension follows from a result above and maps to a research question.
 
 * **Validate tail probabilities across all winters, not one small test set** (RQ3). The 12 test
   winters cannot rank the generators. Holding out each block of winters in turn, and refitting
