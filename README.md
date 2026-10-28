@@ -255,6 +255,32 @@ periods pool 3 seeds; single seeds give 129–477 (cell) and 114–457 (box) win
 
 ---
 
+## Next steps
+
+Each extension follows from a result above and maps to a research question of the E5 project.
+
+* **Validate tail probabilities across all winters, not one small test set** (RQ3). The 12 test
+  winters cannot rank the generators. Holding out each block of winters in turn, and refitting
+  every time, would use all 64 winters for evaluation while keeping the leakage rules.
+* **Let the tail shape vary in space** (RQ1–2). In the simulation, one shared ξ leaves single-cell
+  errors of about 16–20% at one day in 100,000 when the true ξ varies, even when the fitted ξ is
+  close to the true average. A ξ that varies smoothly across cells, for example with a spatial
+  penalty or a Bayesian hierarchical prior, would keep the pooling while removing that error.
+* **Replace the VAE with a stronger generative model, keeping EVT margins** (RQ2–3). The VAE gets
+  joint extremes right but produces extreme normal scores too rarely, and its results vary
+  between training runs. A diffusion model, as in recent UK precipitation emulation, could be
+  combined with the same EVT margins and judged with the same diagnostics.
+* **Account for uncertainty in the dependence model** (RQ3). The tail-uncertainty intervals here
+  hold the copula and the VAE fixed. Refitting the dependence model inside the bootstrap, or
+  averaging over many training runs, would give honest intervals for events like Storm Desmond.
+* **Condition on climate** (RQ4). Mean winter rainfall rose over 1961–2025, and this pilot is
+  stationary. Conditioning the generator on large-scale climate drivers, or on a warming level,
+  would move from describing the past climate to projecting future extremes.
+* **Move to convection-permitting data** (RQ1). Repeat the comparison on hourly 2.2 km simulations,
+  where short, intense convective rainfall matters more than in daily winter totals.
+
+---
+
 ## Repository
 
 | Path | Contents |
